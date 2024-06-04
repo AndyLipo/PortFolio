@@ -1,28 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
 
-function TypeEffect({ text }) {
-  const [displayText, setDisplayText] = useState('');
-
-  useEffect(() => {
-    let currentIndex = 0;
-
-    const interval = setInterval(() => {
-      setDisplayText((prevText) => {
-        if (currentIndex >= text.length) {
-          clearInterval(interval);
-          return text;
-        }
-        return prevText + text[currentIndex++];
-      });
-    }, 100); // Ajusta la velocidad de escritura aquí (en milisegundos)
-
-    return () => clearInterval(interval);
-  }, [text]);
-
-  return <span>{displayText}</span>;
-}
-
 function MainAbout() {
   const [showTypeEffect, setShowTypeEffect] = useState(false);
 
@@ -39,7 +17,7 @@ function MainAbout() {
     <div className='grid grid-cols-2 grid-rows-1 gap-0 mt-72'>
       <article className="max-w-2xl p-8 col-start-1 col-end-2 row-start-1 row-end-2 mr-20">
         <p className="text-xl font-light">
-          I'm {showTypeEffect && <TypeEffect text="Andres" />}, I'm Argentinian.
+          Hi Im Andres, I'm Argentinian.
         </p>
         <p className="text-xl font-light">Currently, I'm in search of job opportunities.</p>
         <p className="text-xl font-light">

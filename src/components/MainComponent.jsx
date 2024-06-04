@@ -3,6 +3,7 @@ import React from 'react';
 import Background from '../assets/cell_background.png';
 import PortF from './PortFolio';
 import MainAbout from './MainAbout';
+import Lenguajes from './Lenguajes';
 
 function MainComponent() {
   return (
@@ -11,8 +12,8 @@ function MainComponent() {
       
     >
       <div className="flex flex-col justify-center items-center min-h-screen" style={{ backgroundImage: `url(${Background})` }}>
-        <div className='flex flex-col justify-center items-center content-normal mb-16 mt-72'>
-          <p className='font-light text-sm block flex-grow-0 flex-shrink-0 self-auto order-0'>
+        <div className='flex flex-col justify-center items-center content-normal mb-16 mt-60'>
+          <p className='font-light text-lg block flex-grow-0 flex-shrink-0 self-auto order-0'>
             FrontEnd Developer
           </p>
           <h1 className='font-light text-7xl text-center'>
@@ -26,6 +27,7 @@ function MainComponent() {
           </h1>
         </div>
         <MainAbout />
+        <Lenguajes />
         <PortF />
       </div>
     </div>
