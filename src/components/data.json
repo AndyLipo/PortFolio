@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "img": "https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg",
+      "title": "FunkoShop Ecommerce",
+      "information": "It is an ecommerce application; the front-end was done with HTML, CSS, and JavaScript. On the backend, Node.js, Express, and a database were used, following an MVC structure. In fact, a number of different login methods were made for the backend. I am in the process of making the whole application responsive and will add a payment gateway using Mercado Pago."
+    },
+    {
+      "id": 2,
+      "img": "https://tecdn.b-cdn.net/img/new/standard/nature/185.jpg",
+      "title": "Task App Manager",
+      "information": "This app was built as a project for the ReactJS course, in the National Technological University. Here, I worked with React and different hooks. Later on, it was styled with Bootstrap, and I continued developing, adding different columns for the task statuses. Finally, I decided to go for a Drag and Drop library, that was dnd kit, to make the cards draggable and droppable."
+    },
+    {
+      "id": 3,
+      "img": "https://tecdn.b-cdn.net/img/new/standard/nature/186.jpg",
+      "title": "FurniScape",
+      "information": "In FurniScape, an ecommerce platform unlike FunkoShop, I implemented a Mercado Pago payment gateway using its API, making it responsive. The technologies I used were HTML, CSS, and JavaScript. On the server side, I used Node.js to create routes and backend URLs to redirect the payment results. Lastly, I plan to add scrolling animations."
+    },
+    {
+      "id": 4,
+      "img": "https://tecdn.b-cdn.net/img/new/standard/nature/187.jpg",
+      "title": "Spotify Clone",
+      "information": "Built a Spotify clone in Astro, React.js, CSS, JavaScript. Remaining to do: add 3D animations."
+    }
+  ]
+  

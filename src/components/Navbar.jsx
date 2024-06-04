@@ -4,7 +4,8 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Avatar from '../assets/foto-avatar2.jpg'
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
@@ -40,7 +41,7 @@ export default function Example() {
     <div className="flex flex-shrink-0 items-center">
     <img
           className="inline-block h-12 w-12 rounded-full ring-white"
-          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+          src={Avatar}
           alt=""
         />
   </div>
@@ -51,7 +52,7 @@ export default function Example() {
           key={item.name}
           href={item.href}
           className={classNames(
-            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+            item.current ? 'bg-pale_dogwood-400 text-white' : 'text-gray-300 hover:bg-pale_dogwood hover:text-white',
             'rounded-md px-3 py-2 text-sm font-medium'
           )}
           aria-current={item.current ? 'page' : undefined}
@@ -66,9 +67,9 @@ export default function Example() {
     <label>
       <div className="w-9 h-10 cursor-pointer flex flex-col items-center justify-center">
         <input className="hidden peer" type="checkbox" />
-        <div className="w-[50%] h-[2px] bg-caribean rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"></div>
-        <div className="w-[50%] h-[2px] bg-caribean rounded-md transition-all duration-300 origin-center peer-checked:hidden"></div>
-        <div className="w-[50%] h-[2px] bg-caribean rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"></div>
+        <div className="w-[50%] h-[2px] bg-caribbean_current rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"></div>
+        <div className="w-[50%] h-[2px] bg-caribbean_current rounded-md transition-all duration-300 origin-center peer-checked:hidden"></div>
+        <div className="w-[50%] h-[2px] bg-caribbean_current rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"></div>
       </div>
     </label>
   </div>
